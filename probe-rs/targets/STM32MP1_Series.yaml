@@ -1,0 +1,1911 @@
+name: STM32MP1 Series
+manufacturer:
+  id: 0x20
+  cc: 0x0
+generated_from_pack: true
+pack_file_release: 1.3.1
+variants:
+- name: STM32MP151AAAx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151AABx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151AACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151AADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151CAAx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151CABx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151CACx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151CADx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151DAAx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151DABx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151DACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151DADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151FAAx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151FABx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151FACx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP151FADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153AAAx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153AABx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153AACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153AADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153CAAx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153CABx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153CACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153CADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153DAAx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153DABx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153DACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153DADx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153FAAx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153FABx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153FACx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP153FADx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157AAAx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157AABx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157AACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157AADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157CAAx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157CABx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157CACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157CADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157DAAx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157DABx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157DACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157DADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157FAAx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157FABx
+  cores:
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157FACx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false
+- name: STM32MP157FADx
+  cores:
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-a7
+    type: armv7a
+    core_access_options: !Arm
+      ap: !v1 1
+  - name: cortex-m4
+    type: armv7em
+    core_access_options: !Arm
+      ap: !v1 2
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x10000000
+      end: 0x10020000
+    cores:
+    - cortex-m4
+    access:
+      write: false
+      boot: true
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10020000
+      end: 0x10040000
+    cores:
+    - cortex-m4
+  - !Generic
+    name: IRAM2
+    range:
+      start: 0x10040000
+      end: 0x10060000
+    cores:
+    - cortex-m4
+    access:
+      execute: false

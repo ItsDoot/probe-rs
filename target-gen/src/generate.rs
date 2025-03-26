@@ -225,6 +225,7 @@ fn create_core(processor: &Processor) -> Result<ProbeCore> {
 
 fn core_to_probe_core(value: &Core) -> Result<CoreType, Error> {
     Ok(match value {
+        Core::CortexA7 => CoreType::Armv7a,
         Core::CortexM0 => CoreType::Armv6m,
         Core::CortexM0Plus => CoreType::Armv6m,
         Core::CortexM4 => CoreType::Armv7em,
